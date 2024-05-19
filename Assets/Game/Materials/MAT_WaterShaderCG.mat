@@ -1,0 +1,152 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: MAT_WaterShaderCG
+  m_Shader: {fileID: 4800000, guid: d9c54dc929538c74eba516b281b86576, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords:
+  - _AMBIENT_ENABLED
+  - _DIFFUSE_ENABLED
+  - _ENVIRONMENT_REFLECTION_ENABLED
+  - _FRESNEL_ENABLED
+  - _SPECULAR_ENABLED
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BumpMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailAlbedoMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailMask:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailNormalMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _EmissionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _EnvironmentMap:
+        m_Texture: {fileID: 8900000, guid: 99af420a4ccafa74abdc47436d8b0685, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MetallicGlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _OcclusionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ParallaxMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints:
+    - _FragmentWavesCount: 128
+    - _Seed: 870
+    - _VertexWavesCount: 6
+    - _WavesCount: 128
+    m_Floats:
+    - _Ambient: 1
+    - _AmbientEnabled: 1
+    - _Amplitude: 1
+    - _Bending: 1
+    - _BumpScale: 1
+    - _Cutoff: 0.5
+    - _DetailNormalMapScale: 1
+    - _DiffuseCategory: 1
+    - _DiffuseEnabled: 1
+    - _DiffuseNormalStrength: 1.5
+    - _DiffuseStrength: 1
+    - _DirectionAngle: 1.14
+    - _DstBlend: 0
+    - _EnvironmentReflectionCategory: 1
+    - _EnvironmentReflectionEnabled: 1
+    - _EnvironmentReflectionNormalStrength: 10
+    - _EnvironmentReflectionStrength: 0.2
+    - _FragmentGeneralCategory: 1
+    - _FresnelBias: 0.1
+    - _FresnelEnabled: 1
+    - _FresnelEnvironmentReflectionBias: 0
+    - _FresnelEnvironmentReflectionPower: 6
+    - _FresnelEnvironmentReflectionStrength: 0.6
+    - _FresnelShiness: 5
+    - _FresnelShinessSky: 6
+    - _FresnelShinessSpectacular: 15
+    - _FresnelSkyBias: 0
+    - _FresnelSpectacularBias: 0
+    - _FresnelSpectacularPower: 15
+    - _FresnelSpectacularStrength: 16
+    - _GeneralCategory: 1
+    - _GlossMapScale: 1
+    - _Glossiness: 0.5
+    - _GlossyReflections: 1
+    - _Length: 6.2831855
+    - _Metallic: 0
+    - _Mode: 0
+    - _NormalPerVertex: 0
+    - _NormalStrength: 1.5
+    - _OcclusionStrength: 1
+    - _Parallax: 0.02
+    - _Pressure: -1.1
+    - _Seed: 173.61
+    - _Shiness: 86.18
+    - _SkyNormalStrength: 0.909
+    - _SmoothnessTextureChannel: 0
+    - _SpecularCategory: 1
+    - _SpecularEnabled: 1
+    - _SpecularHighlights: 1
+    - _SpecularNormalStrength: 0.4
+    - _SpecularStrength: 1
+    - _Speed: 0.5
+    - _SpeedMultiplier: 0.75
+    - _SrcBlend: 1
+    - _UVSec: 0
+    - _VertexGeneralCategory: 1
+    - _WaterBanner: 1
+    - _Wavelength: 3
+    - _WavesCount: 1
+    - _ZWrite: 1
+    - _fbmAmplitudeMult: 0.915
+    - _fbmFrequencyMult: 1.06
+    m_Colors:
+    - _Ambient: {r: 0.11458706, g: 0.16303654, b: 0.23584908, a: 1}
+    - _BaseColor: {r: 0.21176471, g: 0.30588236, b: 0.5019608, a: 1}
+    - _Bending: {r: 0, g: 0, b: 0, a: 0}
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _EnvironmentReflectionColor: {r: 0.3962264, g: 0.3962264, b: 0.3962264, a: 1}
+    - _EnvironmentReflectionStrength: {r: 1, g: 1, b: 1, a: 1}
+    - _FresnelColor: {r: 1, g: 1, b: 1, a: 1}
+    - _FresnelSky: {r: 1, g: 1, b: 1, a: 1}
+    - _FresnelSpectacular: {r: 1, g: 1, b: 1, a: 1}
+    - _SpecularColor: {r: 1, g: 1, b: 1, a: 1}
+    - _SunDirection: {r: -1, g: -1, b: 0, a: 0}
+  m_BuildTextureStacks: []
