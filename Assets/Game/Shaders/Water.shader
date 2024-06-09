@@ -288,7 +288,7 @@ Shader "Custom/Water"
 				float specular = pow(clamp(dot(sunReflection, cameraDirection), 0, 1), _Shiness);
 				fixed3 specularCol = specular * _LightColor0.xyz;
 			#ifdef _FRESNEL_ENABLED
-				float specularFresnel = SchlickFresnel(_FresnelSpectacularBias, cameraDirection, diffuseNormal, _FresnelSpectacularPower) * _FresnelSpectacularStrength;
+				float specularFresnel = SchlickFresnel(_FresnelSpectacularBias, cameraDirection, specularNormal, _FresnelSpectacularPower) * _FresnelSpectacularStrength;
 				specularCol *= specularFresnel;
 			#endif
 				color += fixed4(specularCol, 0);

@@ -31,13 +31,17 @@ public class WaterMeshPrepare : MonoBehaviour
         var verticesWidth = width + 1;
         var verticesLength = length + 1;
         var vertices = new Vector3[verticesWidth * verticesLength];
+        var uvs = new Vector2[vertices.Length];
         var triangles = new int[length * width * 6];
 
         for (int z = 0; z < verticesLength; z++)
         {
             for (int x = 0; x < verticesWidth; x++)
             {
-                vertices[z * verticesWidth + x] = new Vector3(x - width / 2, 0, z - length / 2) * _cellSize;
+                var vertexIndex = z * verticesWidth + x;
+
+                vertices[vertexIndex] = new Vector3(x - width / 2, 0, z - length / 2) * _cellSize;
+                uvs[vertexIndex] = new Vector2(x, z);
             }
         }
 
@@ -57,9 +61,10 @@ public class WaterMeshPrepare : MonoBehaviour
             }
         }
 
-        mesh.vertices = vertices;
-        mesh.triangles = triangles;
-        mesh.normals = Enumerable.Repeat(Vector3.up, vertices.Length).ToArray();
+        mesh.SetVertices(vertices);
+        mesh.SetTriangles(triangles, 0);
+        mesh.RecalculateNormals();
+        mesh.SetUVs(0, uvs);
 
         return mesh;
     }
